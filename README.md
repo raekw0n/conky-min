@@ -14,4 +14,4 @@ Debian/Ubuntu/Mint:
 ## Instructions
 
 1. Move all the files to `~/.Conky`.
-2. Run `~/Conky/init.sh`.
+2. Run `~/.Conky/init.sh`.
