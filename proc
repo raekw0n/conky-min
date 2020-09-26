@@ -27,8 +27,8 @@ minimum_size 160 100
 maximum_width 160
  
 alignment tl
-gap_x 20
-gap_y 182 
+gap_x 260
+gap_y 380 
 # -- Graphics settings -- #
 draw_shades no
 draw_outline no
@@ -39,18 +39,18 @@ draw_graph_borders no
 use_xft yes
 xftfont Santana:size=10
 xftalpha 0.8
-
  
 uppercase no
  
 default_color FFFFFF
  
 TEXT
-${font Santana:size=14}Disk ${alignr}$fs_used_perc%${font}
+${font Santana:size=14}Processes
 ${font Santana:size=12}${stippled_hr}${font}
-${fs_bar}
-${font Santana:size=8}${fs_used}/${fs_size}${font}
+Load: ${alignr}${loadavg 1}
+Processes: ${alignr}${running_processes}/${processes}
 
-Used: ${alignr}${fs_used_perc}%
-Total: ${alignr}${fs_size}
-
+${top name 1} ${alignr}${top cpu 1}
+${top name 2} ${alignr}${top cpu 2}
+${top name 3} ${alignr}${top cpu 3}
+${top name 4} ${alignr}${top cpu 4}

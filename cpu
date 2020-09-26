@@ -28,7 +28,7 @@ maximum_width 160
  
 alignment tl
 gap_x 20
-gap_y 182
+gap_y 382
  
 # -- Graphics settings -- #
 draw_shades no
@@ -48,12 +48,16 @@ default_color FFFFFF
 TEXT
 ${font Santana:size=14}CPU ${alignr}$cpu%${font}
 ${font Santana:size=12}${stippled_hr}${font}
-
-Temp: ${alignr}${platform coretemp.0/hwmon/hwmon2 temp 1} °C
-Load: ${alignr}${loadavg 1}
-Processes: ${alignr}${running_processes}/${processes}
-
-${top name 1} ${alignr}${top cpu 1}
-${top name 2} ${alignr}${top cpu 2}
-${top name 3} ${alignr}${top cpu 3}
-${top name 4} ${alignr}${top cpu 4}
+Temp: ${alignr}${platform coretemp.0/hwmon/hwmon3 temp 1} °C
+${font Santana:size=8}
+(High = +86.0°C)
+(Critical = +100.0°C)
+${font}
+Core 1: ${alignr}${platform coretemp.0/hwmon/hwmon3 temp 2} °C
+Core 2: ${alignr}${platform coretemp.0/hwmon/hwmon3 temp 3} °C
+Core 3: ${alignr}${platform coretemp.0/hwmon/hwmon3 temp 4} °C
+Core 4: ${alignr}${platform coretemp.0/hwmon/hwmon3 temp 5} °C
+Core 5: ${alignr}${platform coretemp.0/hwmon/hwmon3 temp 6} °C
+Core 6: ${alignr}${platform coretemp.0/hwmon/hwmon3 temp 7} °C
+Core 7: ${alignr}${platform coretemp.0/hwmon/hwmon3 temp 8} °C
+Core 8: ${alignr}${platform coretemp.0/hwmon/hwmon3 temp 9} °C

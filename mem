@@ -28,7 +28,7 @@ maximum_width 160
  
 alignment tl
 gap_x 260
-gap_y 182 
+gap_y 183
 # -- Graphics settings -- #
 draw_shades no
 draw_outline no
@@ -47,6 +47,8 @@ default_color FFFFFF
 TEXT
 ${font Santana:size=14}RAM ${alignr}$memperc%${font}
 ${font Santana:size=12}${stippled_hr}${font}
+${membar}
+${font Santana:size=8}${mem}/${memmax}${font}
 
 ${top_mem name 1} ${alignr}${top_mem mem 1}
 ${top_mem name 2} ${alignr}${top_mem mem 2}
